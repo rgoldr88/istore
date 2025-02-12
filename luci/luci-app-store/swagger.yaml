@@ -1,3 +1,4 @@
+runs-on: self-hosted
 swagger: "2.0"
 info:
   description: Store API V1
